@@ -24,7 +24,7 @@
       </div>
       <div class="right-side">
         <div class="row verti-center">
-          <p>User</p>
+          <p><span id="time-based-welcome">Hello</span>, User</p>
           <div class="user-profile"></div>
         </div>
       </div>
@@ -107,4 +107,17 @@
       }
     });
   </script> -->
+  <script>
+    // Greetings
+    var time = new Date().getHours();
+    var greeting;
+    if (time < 12) {
+      greeting = "Good Morning";
+    } else if (time < 18) {
+      greeting = "Good Afternoon";
+    } else {
+      greeting = "Good Evening";
+    }
+    document.getElementById("time-based-welcome").innerHTML = greeting;
+  </script>
 </html>
