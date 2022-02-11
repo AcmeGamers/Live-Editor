@@ -61,16 +61,37 @@
   <!-- Syntax Highligher -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script>
-    hljs.initHighlightingOnLoad();
+    hljs.highlightAll();
   </script>
 
   <!-- Custom Scripts -->
   <script src="js/formatter.js"></script>
-  <script>
-    // Format HTML
-    HTML = document.getElementById("html");
-    HTML.addEventListener("input", function () {
-      HTML.value = formatHTML(HTML.value);
+  <!-- <script>
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && e.key === "s") {
+        // Prevent the Save dialog to open
+        e.preventDefault();
+
+        // Trigger the formatter
+        console.log("CTRL + S");
+        // Format HTML
+        HTML = document.getElementById("html");
+        HTML.addEventListener("input", function () {
+          HTML.value = formatHTML(HTML.value);
+        });
+
+        // Format CSS
+        CSS = document.getElementById("css");
+        CSS.addEventListener("input", function () {
+          CSS.value = formatCSS(CSS.value);
+        });
+
+        // Format JS
+        JS = document.getElementById("js");
+        JS.addEventListener("input", function () {
+          JS.value = formatJS(JS.value);
+        });
+      }
     });
-  </script>
+  </script> -->
 </html>
