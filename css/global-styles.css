@@ -17,13 +17,27 @@ Navigation
   padding: 0.5rem;
   background-color: var(--thm);
 }
+/* Left Side */
+.left-side a {
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+/* Right Side */
+.left-side a,
+.right-side div p {
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 1.3px;
+}
 .user-profile {
-  background: red;
+  background: #fff;
   height: 50px;
   width: 50px;
   border-radius: 5pc;
   margin: 0 10px 0 20px;
 }
+
 /* 
 ------
 Editor
