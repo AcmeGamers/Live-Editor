@@ -1,0 +1,24 @@
+:root {
+  --thm: #404040;
+  --text-area: #686868;
+}
+
+body {
+  margin: 0;
+  background-color: var(--thm);
+}
+
+#editor {
+  display: flex;
+  justify-content: space-between;
+}
+#editor textarea {
+  width: -webkit-fill-available;
+  height: 30vh;
+  background-color: var(--text-area);
+  border: 1px solid #fff;
+  resize: none;
+}
+
+#output {
+}

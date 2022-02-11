@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live Code Editor</title>
+    <link rel="stylesheet" href="css/global-styles.css" />
   </head>
   <body>
     <!-- Live Code editor -->
     <div id="editor">
-      <textarea name="html" id="html" oninput="previewData()"></textarea>
-      <textarea name="css" id="css" oninput="previewData()"></textarea>
-      <textarea name="js" id="js" oninput="previewData()"></textarea>
+      <div>
+        <h2>HTML</h2>
+        <textarea name="html" id="html" oninput="previewData()"></textarea>
+      </div>
+      <div>
+        <h2>CSS</h2>
+        <textarea name="css" id="css" oninput="previewData()"></textarea>
+      </div>
+      <div>
+        <h2>JS</h2>
+        <textarea name="js" id="js" oninput="previewData()"></textarea>
+      </div>
     </div>
 
     <!-- Live Code output -->
