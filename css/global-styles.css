@@ -56,6 +56,7 @@ Editor
 }
 #editor div {
   width: -webkit-fill-available;
+  box-shadow: 7px 9px 13px #0000003b;
 }
 #editor div:nth-child(2) {
   margin: 0 10px;
