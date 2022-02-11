@@ -16,11 +16,16 @@ body {
   width: -webkit-fill-available;
 }
 #editor div textarea {
-  width: -webkit-fill-available;
-  height: 30vh;
+  /* Color Formatting */
+  color: #fff;
   background-color: var(--text-area);
   border: 1px solid #fff;
+
+  /* Size */
+  height: 30vh;
+  width: -webkit-fill-available;
   resize: none;
+  padding: 10px;
 }
 
 #output iframe {

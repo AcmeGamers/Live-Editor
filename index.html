@@ -63,4 +63,14 @@
   <script>
     hljs.initHighlightingOnLoad();
   </script>
+
+  <!-- Custom Scripts -->
+  <script src="js/formatter.js"></script>
+  <script>
+    // Format HTML
+    HTML = document.getElementById("html");
+    HTML.addEventListener("input", function () {
+      HTML.value = formatHTML(HTML.value);
+    });
+  </script>
 </html>
