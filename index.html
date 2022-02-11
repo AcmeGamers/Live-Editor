@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Code Editor</title>
+  </head>
+  <body>
+    <!-- Live Code editor -->
+    <div id="editor">
+      <textarea name="html" id="html" oninput="previewData()"></textarea>
+      <textarea name="css" id="css" oninput="previewData()"></textarea>
+      <textarea name="js" id="js" oninput="previewData()"></textarea>
+    </div>
+
+    <!-- Live Code output -->
+    <div id="output">
+      <iframe id="output-frame"></iframe>
+    </div>
+
+    <script>
+      function previewData() {
+        var HTML = document.getElementById("html").value,
+          CSS = document.getElementById("css").value,
+          JS = document.getElementById("js").value,
+          iframe = document.getElementById("output-frame");
+
+        iframe.src =
+          "data:text/html;charset=utf-8," +
+          encodeURI(
+            HTML + "<style>" + CSS + "</style>" + "<script>" + JS + "<\/script>"
+          );
+      }
+    </script>
+  </body>
+</html>
