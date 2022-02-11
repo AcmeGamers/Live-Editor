@@ -90,7 +90,7 @@ Output
  */
 #output iframe {
   background: #fff;
-
+  border: none;
   width: -webkit-fill-available;
   height: 70vh;
 }
