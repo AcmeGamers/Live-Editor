@@ -23,5 +23,7 @@ body {
   resize: none;
 }
 
-#output {
+#output iframe {
+  width: -webkit-fill-available;
+  height: 70vh;
 }
