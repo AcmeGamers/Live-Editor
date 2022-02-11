@@ -20,7 +20,12 @@
     <div id="editor">
       <div>
         <h2>HTML</h2>
-        <textarea name="html" id="html" oninput="previewData()"></textarea>
+        <textarea
+          name="html"
+          id="html"
+          oninput="previewData()"
+          class="language-html"
+        ></textarea>
       </div>
       <div>
         <h2>CSS</h2>
@@ -56,6 +61,6 @@
   <!-- Syntax Highligher -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script>
-    hljs.highlightAll();
+    hljs.initHighlightingOnLoad();
   </script>
 </html>
