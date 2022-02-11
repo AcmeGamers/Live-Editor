@@ -31,7 +31,9 @@ Navigation
   letter-spacing: 1.3px;
 }
 .user-profile {
-  background: #fff;
+  /* background: #fff; */
+  background: url(https://avatars.githubusercontent.com/u/52010365?v=4);
+  background-size: cover;
   height: 50px;
   width: 50px;
   border-radius: 5pc;
