@@ -8,12 +8,44 @@ body {
   background-color: var(--thm);
 }
 
+/*
+----------
+Navigation
+----------
+*/
+.nav-bar {
+  padding: 0.5rem;
+  background-color: var(--thm);
+}
+.user-profile {
+  background: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 5pc;
+  margin: 0 10px 0 20px;
+}
+/* 
+------
+Editor
+------ 
+*/
+
 #editor {
   display: flex;
   justify-content: space-between;
 }
 #editor div {
   width: -webkit-fill-available;
+}
+#editor div:nth-child(2) {
+  margin: 0 10px;
+}
+#editor div h2 {
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  margin: 0;
+  padding: 5px 10px;
 }
 #editor div textarea {
   /* Color Formatting */
@@ -28,6 +60,11 @@ body {
   padding: 10px;
 }
 
+/* 
+------
+Output
+------
+ */
 #output iframe {
   width: -webkit-fill-available;
   height: 70vh;
