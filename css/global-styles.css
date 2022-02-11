@@ -12,7 +12,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-#editor textarea {
+#editor div {
+  width: -webkit-fill-available;
+}
+#editor div textarea {
   width: -webkit-fill-available;
   height: 30vh;
   background-color: var(--text-area);
